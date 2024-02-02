@@ -10,5 +10,5 @@ variable "instance_type" {
 
 variable "ec2name" {
   type    = string
-  default = "My-demo-ec2"
+  default = "Demo-EC2"
 }
