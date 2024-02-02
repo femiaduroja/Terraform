@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
   instance_type   = "t2.micro"
   security_groups = [module.sg.sg_name]
   // user_data       = file("./web/server-script.sh")
-  user_data       = file("${path.root}/server-script.sh")
+  user_data       = file("${path.module}/server-script.sh")
   tags = {
     Name = "Web Server"
   }
